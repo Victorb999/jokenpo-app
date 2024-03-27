@@ -87,13 +87,25 @@ export const Jokenpo = () => {
         className="flex 
      justify-center items-center p-4 gap-2"
       >
-        <Button variant="secondary" onClick={() => jokenpoResp("pedra")}>
+        <Button
+          variant="secondary"
+          onClick={() => jokenpoResp("pedra")}
+          disabled={load}
+        >
           🪨
         </Button>
-        <Button variant="secondary" onClick={() => jokenpoResp("papel")}>
+        <Button
+          variant="secondary"
+          onClick={() => jokenpoResp("papel")}
+          disabled={load}
+        >
           📜
         </Button>
-        <Button variant="secondary" onClick={() => jokenpoResp("tesoura")}>
+        <Button
+          variant="secondary"
+          onClick={() => jokenpoResp("tesoura")}
+          disabled={load}
+        >
           ✂️
         </Button>
       </div>
